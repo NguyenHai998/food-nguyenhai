@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Project Nguyen Hai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <!-- ========= Start Herder========== -->
+    
+    <header>
+        <!-- <a href="#banner" class="logo" >Food<span>.</span></a> -->
+        <a href="#banner" class="logo" >Food<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();">
+
+        </div>
+        <ul class="navigation">
+          <li><a onclick="toggleMenu()" href="#banner">Home</a></li>  
+          <li><a onclick="toggleMenu()" href="#about">About</a></li>   
+          <li><a onclick="toggleMenu()" href="#menu">Menu</a></li>  
+          <li><a onclick="toggleMenu()" href="#expert">Expert</a></li>  
+          <li><a onclick="toggleMenu()" href="#testimonials">Testimonials</a></li>  
+          <li><a onclick="toggleMenu()" href="#contact">Contact</a></li>  
+        </ul>
+    </header>
+     <!-- ========= End Header========== -->
+
+
+
+     <!-- ========= Start Banner ======= -->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Always Choose Good</h2>
+            <p>One of the ways we live our ethos is through our food.
+             Every item on NguyenHai-Food menu is all-natural, fresh, and sourced locally. And you won’t find any item more than $10. Now that’s good!
+            </p>
+            <a class="btn" href="#menu">Our Menu</a>
+        </div>
+    </section>
+    <!-- ========= End Banner ========== -->
+
+
+
+
+    <!-- ========= Start About ========== -->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="title-Text"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Voluptatem sed natus optio ipsum sequi necessitatibus 
+                     deleniti pariatur adipisci et error veritatis sit odio dolorem aliquid in,
+                    nesciunt maxime animi iste! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Sit voluptate rem aspernatur ipsum pariatur, aperiam tempora laudantium deserunt? Ea
+                      ad harum ducimus iure sit iusto veritatis commodi at quaerat deserunt. <br><br> Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Placeat cum, unde pariatur, esse quis adipisci, impedit 
+                     ratione aspernatur quam officiis aperiam. Facere earum expedita voluptas possimus
+                      laudantium repellendus libero dolore?
+
+                </p>
+            </div>
+
+            <div class="col50">
+                <div class="imgBx">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qErl4he7eMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ========= End About ============ -->
+
+
+    <!-- ========= Start Menu =========== -->
+    <section class="menu" id="menu">
+
+        <div class="title">
+            <h2 class="title-Text">Our <span>M</span>enu</h2>
+            <p>Every item on NguyenHai-Food menu is all-natural, fresh, and sourced locally.</p>
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu1.jpg" alt="">
+                </div>
+               
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star no-star"></i>
+                    <div class="box-content__float">
+                        <span><i onclick="addReaction()" class="far fa-thumbs-down active-icon"></i></span>
+                        <span><i onclick="addReactionHeart()" class="fas fa-heart active-icon-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$12</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Bowl</h3>
+                </div>
+
+                
+            </div>
+
+            
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu2.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <div class="box-content__float">
+                        <span><i onclick="addReaction()" class="far fa-thumbs-down active-icon"></i></span>
+                        <span><i onclick="addReactionHeart()" class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+                
+                <div class="price-eating">
+                    <p>$13</p>
+                </div>
+
+
+                <div class="text">
+                    <h3>Special Soup</h3>
+                </div>
+
+                
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu3.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star no-star"></i>
+                    <div class="box-content__float">
+                        <span href=""><i onclick="addReaction()" class="far fa-thumbs-down"></i></span>
+                        <span href=""><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$11</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Pasta</h3>
+                </div>
+
+                
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu4.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <div class="box-content__float">
+                        <span href=""><i onclick="addReaction()" class="far fa-thumbs-down"></i></span>
+                        <span href=""><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$14</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Salads</h3>
+                </div>
+
+                
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu5.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star no-star"></i>
+                    <i class="fas fa-star no-star"></i>
+                    <div class="box-content__float">
+                        <span href=""><i onclick="addReaction()" class="far fa-thumbs-down"></i></span>
+                        <span href=""><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$10</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Soup</h3>
+                </div>
+
+                
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/menu6.jpg" alt="">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <div class="box-content__float">
+                        <span href=""><i onclick="addReaction()" class="far fa-thumbs-down"></i></span>
+                        <span href=""><i class="fas fa-heart"></i></span>
+                    </div>
+                </div>
+
+                <div class="price-eating">
+                    <p>$14</p>
+                </div>
+
+                <div class="text">
+                    <h3>Special Sandwich</h3>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="title">
+            <a class="btn" href="/Sign-in.html">View All</a>
+        </div>
+    </section>
+
+    <!-- ========= End Menu =========== -->
+
+
+    <!-- ========= Start Expert ======= -->
+    <section class="expert" id="expert">
+
+        <div class="title">
+            <h2 class="title-Text">Our Kitchen <span>E</span>xpert</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/expert1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/expert2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/expert3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/expert4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= End Expert ========= -->
+
+
+    <!-- ====== Start Testimonials ==== -->
+    <section class="testimonials" id="testimonials">
+
+        <div class="title white">
+            <h2 class="title-Text"><span>S</span>aid About Us</h2>
+            <p> See for yourself what people are raving about.
+            .</p>
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/testi1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>"Wow!! Such a great spot doing great things for an unbeatable price. 
+                        Nothing on the menu costs more than $10 and the flavors are really great! 
+                        They have a ton of different sauces you can pick from to add on top too which was my favorite."
+                    </p>
+                    <h3>Angela Alice</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/testi2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>"I try not to review a place unless I've been there more than once, 
+                        but the exception is if I'm totally blown away. And I WAS here!!!
+                         The price point had me unable to understand at first. $12 for a whole bowl? 
+                         $14 for sides or a pita sandwich? Insane."
+                    </p>
+                    <h3>Tom Hiddleston</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="/images/testi3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>"NguyenHai-Food is hands down the BEST deal in DC…. To make a great 
+                        deal even better, NguyenHai-Food donates 5% of income to refugees. So, 
+                        you can eat your yummy, fresh falafels while also doing good for the world.
+                        And I WAS here!!!."
+                    </p>
+                    <h3>Emily Trần</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ====== End Testimonials ====== -->
+
+
+    <!-- ====== Start Contact ========= -->
+    
+    <section class="contact" id="contact">
+
+        <div class="title">
+            <h2 class="title-Text"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="contactForm">
+            <h3>Send Me Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+
+            <div class="inputBox">
+                <textarea type="text" placeholder="Text"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Send</button>
+            </div>
+        </div>
+    </section>
+    <!-- ====== End Contact =========== -->
+
+    <section class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239413.37317354628!2d106.40082453308402!3d17.25308254270794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3140a9f5e7874919%3A0x5de6c3ed4a5536a0!2zUXXhuqNuZyBOaW5oLCBRdeG6o25nIELDrG5oLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1605347700366!5m2!1svi!2s" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- ====== Start Copy Right =========== -->
+
+    <div class="copyrightText">
+        <p>Copyright © 2020 by <a href="">Nguyen Hai</a>. All Right Reserved</p>
+    </div>
+
+    <!-- ====== End Copy Right ============= -->
+
+
+        
+              <div class="dashed-loading"></div>
+
+    
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }; 
+
+        function addReaction() {
+            const addReactionColor = document.querySelector('.active-icon');
+            addReactionColor.classList.toggle('red-color');
+        };
+
+        function addReactionHeart() {
+            const addReactionColorHeart = document.querySelector('.active-icon-heart');
+            addReactionColorHeart.classList.toggle('red-color');
+        };
+
+
+
+
+        
+        
+
+        
+    </script>
+    
+</body>
+</html>
