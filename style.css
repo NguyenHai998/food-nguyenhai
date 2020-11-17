@@ -115,7 +115,7 @@ header .navigation a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(/images/bg.jpg);
+    background: url(./images/bg.jpg);
     background-size: cover;
 }
 
@@ -327,7 +327,7 @@ header .navigation a:hover {
 
 /* ========== Start Testimonials========== */
 .testimonials {
-    background: url(/images/bg2.jpg);
+    background: url(./images/bg2.jpg);
     background-size: cover;
 
 }
@@ -391,7 +391,7 @@ header .navigation a:hover {
 
 /* ========== Start Contact============= */
 .contact {
-    background: url(/images/bg3.jpg);
+    background: url(./images/bg3.jpg);
     background-size: cover;
 }
 
